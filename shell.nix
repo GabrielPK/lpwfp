@@ -4,9 +4,8 @@ with pkgs;
 
 mkShell {
   buildInputs = [
-    haskell.packages.ghc96.ghc
     haskell.packages.ghc96.stack
-    haskellPackages.gnuplot
+    gnuplot
   ];
 
   # shellHook = ''

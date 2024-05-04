@@ -7,11 +7,11 @@ cabal-version: 2.2
 name:           lpwfp
 version:        0.1.0.0
 description:    Please see the README on GitHub at <https://github.com/githubuser/lpwfp#readme>
-homepage:       https://github.com/githubuser/lpwfp#readme
-bug-reports:    https://github.com/githubuser/lpwfp/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2024 Author name here
+homepage:       https://github.com/gabrielpk/lpwfp#readme
+bug-reports:    https://github.com/gabrielpk/lpwfp/issues
+author:         Gabriel Kralik
+maintainer:     gabrielkralik@outlook.com
+copyright:      2024 Gabriel Kralik
 license:        BSD-3-Clause
 license-file:   LICENSE
 build-type:     Simple
@@ -21,11 +21,10 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/lpwfp
+  location: https://github.com/gabrielpk/lpwfp
 
 library
   exposed-modules:
-      Lib
       Newton2
   other-modules:
       Paths_lpwfp
@@ -50,7 +49,6 @@ executable lpwfp-exe
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , gnuplot
     , lpwfp
   default-language: Haskell2010
 
@@ -66,6 +64,5 @@ test-suite lpwfp-test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , gnuplot
     , lpwfp
   default-language: Haskell2010
